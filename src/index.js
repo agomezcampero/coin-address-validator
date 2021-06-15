@@ -27,7 +27,7 @@ const coinAddressValidator = {
     const currency = currencies.getByNameOrSymbol(currencyNameOrSymbol);
 
     if (currency && currency.validator) {
-      return currency.validator.isValidAddress(address);
+      return currency.validator.isValidAddress(address, currency, networkType);
     }
 
     const addressType = coinAddressValidator.getAddressType(address);
