@@ -6,7 +6,6 @@ const path = require('path');
 const isProduction = process.env.NODE_ENV === 'production';
 
 const developmentPlugins = [
-  new webpack.optimize.OccurrenceOrderPlugin(),
   new webpack.HotModuleReplacementPlugin(),
   new webpack.NoEmitOnErrorsPlugin(),
 ];
